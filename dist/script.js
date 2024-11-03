@@ -221,9 +221,6 @@ document.querySelector('.boxes').addEventListener('click', e => {
 
 window.BOXES = BOXES;
 
-document.querySelector('.next').addEventListener('click', NEXT);
-document.querySelector('.prev').addEventListener('click', PREV);
-
 // Dragging
 // let startX = 0
 // let startOffset = 0
