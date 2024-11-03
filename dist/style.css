@@ -30,69 +30,6 @@ body {
   width: 20vmin;
   z-index: 300;
 }
-button {
-  height: 0px;
-  width: 0px;
-  border-radius: 00%;
-  position: absolute;
-  top: 0%;
-  outline: transparent;
-  cursor: pointer;
-  background: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: 0;
-  transition: transform 0.1s;
-  transform: translate(0, calc(var(--y, 0)));
-}
-button:before {
-  border: 0px solid #e6e6e6;
-  background: linear-gradient(rgba(204,204,204,0.65), #000) #000;
-  content: '';
-  box-sizing: border-box;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 0%;
-  width: 0%;
-  border-radius: 50%;
-}
-button:active:before {
-  background: linear-gradient(#000, rgba(204,204,204,0.65)) #000;
-}
-button:nth-of-type(1) {
-  right: 100%;
-}
-button:nth-of-type(2) {
-  left: 100%;
-}
-button span {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-button:hover {
-  --y: -5%;
-}
-button svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(0deg) translate(2%, 0);
-  height: 30%;
-  fill: #e6e6e6;
-}
-button:nth-of-type(1) svg {
-  transform: translate(-50%, -50%) rotate(180deg) translate(2%, 0);
-}
 .scroll-icon {
   height: 30px;
   position: fixed;
