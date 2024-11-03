@@ -194,11 +194,6 @@ scrollToPosition(SCRUB.vars.position));
 const NEXT = () => scrollToPosition(SCRUB.vars.position - 1 / BOXES.length);
 const PREV = () => scrollToPosition(SCRUB.vars.position + 1 / BOXES.length);
 
-document.addEventListener('keydown', event => {
-  if (event.code === 'ArrowLeft' || event.code === 'KeyA') NEXT();
-  if (event.code === 'ArrowRight' || event.code === 'KeyD') PREV();
-});
-
 document.querySelector('.boxes').addEventListener('click', e => {
   const BOX = e.target.closest('.box');
   if (BOX) {
