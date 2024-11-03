@@ -31,9 +31,9 @@ body {
   z-index: 300;
 }
 button {
-  height: 48px;
-  width: 48px;
-  border-radius: 50%;
+  height: 0px;
+  width: 0px;
+  border-radius: 00%;
   position: absolute;
   top: 0%;
   outline: transparent;
