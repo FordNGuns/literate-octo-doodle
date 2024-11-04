@@ -9,6 +9,8 @@ meticulous thought put into every detail. 🚀" property="og:description" />
 <meta content="hhttps://fordnguns.github.io/literate-octo-doodle/logo.png" property="og:image" />
 <meta content="#4f46e5" data-react-helmet="true" name="theme-color" />
 
+
+
 <body style="background-color: #0e0e0e;">
   <div
     class="absolute inset-0 bg-[url('./grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]">
@@ -18,6 +20,16 @@ meticulous thought put into every detail. 🚀" property="og:description" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .fade-in {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+      }
+    </style>
   </head>
 
   <body>
@@ -31,19 +43,36 @@ meticulous thought put into every detail. 🚀" property="og:description" />
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
           <div class="relative">
-            <button type="button" class="flex items-center gap-x-1 text-sm/6 font-semibold text-white"
+            <button type="button" class="flex items-center gap-x-1 text-sm/6 font-bold text-white"
               aria-expanded="false">
               Home
             </button>
           </div>
-
-          <a href="#" class="text-sm/6 font-semibold text-white">Statistics</a>
-          <a href="#" class="text-sm/6 font-semibold text-white">Experiences</a>
-          <a href="#" class="text-sm/6 font-semibold text-white">Team</a>
+          <div class="relative">
+            <button type="button" class="flex items-center gap-x-1 text-sm/6 font-semibold text-white"
+              onclick="document.getElementById('statistics-section').scrollIntoView({ behavior: 'smooth' })"> Statistics
+            </button>
+          </div>
+          <div class="relative">
+            <button type="button" class="flex items-center gap-x-1 text-sm/6 font-semibold text-white"
+              onclick="document.getElementById('statistics-section').scrollIntoView({ behavior: 'smooth' })">
+              Experiences
+            </button>
+          </div>
+          <div class="relative">
+            <button type="button" class="flex items-center gap-x-1 text-sm/6 font-semibold text-white"
+              onclick="document.getElementById('team-section').scrollIntoView({ behavior: 'smooth' })"> Team
+            </button>
+          </div>
+          <div class="relative">
+            <button type="button" class="flex items-center gap-x-1 text-sm/6 font-semibold text-white"
+              onclick="window.location.href='https://discord.gg/bZXrxjd2ru'">Contact
+            </button>
+          </div>          
         </div>
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" class="text-sm/6 font-semibold text-white">Contact us <span aria-hidden="true">&rarr;</span></a>
-        </div>
+        <button type="button" class="hidden lg:flex lg:flex-1 lg:justify-end"
+            href="https://discord.gg/bZXrxjd2ru" class="text-sm/6 font-semibold text-white">Contact us <span aria-hidden="true">&rarr;</span>
+        </button>
       </nav>
     </header>
 
@@ -120,34 +149,40 @@ meticulous thought put into every detail. 🚀" property="og:description" />
       </div>
     </div>
 
-    <div class="relative isolate overflow-hidden bg-indigo-600 py-8 sm:py-12 lg:py-16">
-      <div class="mx-auto max-w-7xl px-4 lg:px-6">
-        <dl class="grid grid-cols-1 gap-x-4 gap-y-8 text-center lg:grid-cols-3">
-          <div class="mx-auto flex max-w-xs flex-col gap-y-2">
-            <dt class="text-base text-white">Monthly Active Users</dt>
-            <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-4xl">11K+</dd>
+    <div id="statistics-section">
+      <div class="relative isolate overflow-hidden bg-indigo-600 py-8 sm:py-12 lg:py-16">
+        <div class="mx-auto max-w-7xl px-4 lg:px-6">
+          <dl class="grid grid-cols-1 gap-x-4 gap-y-8 text-center lg:grid-cols-3">
+            <div class="mx-auto flex max-w-xs flex-col gap-y-2">
+              <dt class="text-base text-white">Monthly Active Users</dt>
+              <dd class="number order-first text-3xl font-semibold tracking-tight text-white sm:text-4xl"
+                data-target="11000">0</dd>
+            </div>
+            <div class="mx-auto flex max-w-xs flex-col gap-y-2">
+              <dt class="text-base text-white">Peak Concurrent Users</dt>
+              <dd class="number order-first text-3xl font-semibold tracking-tight text-white sm:text-4xl"
+                data-target="30000">0</dd>
+            </div>
+            <div class="mx-auto flex max-w-xs flex-col gap-y-2">
+              <dt class="text-base text-white">Total Visits</dt>
+              <dd class="number order-first text-3xl font-semibold tracking-tight text-white sm:text-4xl"
+                data-target="114000000">0</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+          <div class="aspect-[1155/678] w-[36.09375rem] bg-gradient-to-tr from-[#ffffff] to-[#9089fc] opacity-30"
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
           </div>
-          <div class="mx-auto flex max-w-xs flex-col gap-y-2">
-            <dt class="text-base text-white">Peak Concurrent Users</dt>
-            <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-4xl">30K+</dd>
-          </div>
-          <div class="mx-auto flex max-w-xs flex-col gap-y-2">
-            <dt class="text-base text-white">Total Visits</dt>
-            <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-4xl">114M+</dd>
-          </div>
-        </dl>
-      </div>
-      <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
-        <div class="aspect-[1155/678] w-[36.09375rem] bg-gradient-to-tr from-[#ffffff] to-[#9089fc] opacity-30"
-          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
         </div>
       </div>
     </div>
+    <script> document.addEventListener("DOMContentLoaded", function () { const elements = document.querySelectorAll('.number'); elements.forEach(element => { const target = +element.getAttribute('data-target'); const duration = 1000; const increment = target / (duration / 16); let current = 0; const countUp = () => { current += increment; if (current < target) { element.textContent = Math.floor(current); requestAnimationFrame(countUp); } else { element.textContent = target.toLocaleString(); } }; element.classList.add('visible'); requestAnimationFrame(countUp); }); }); </script>
 
-    <div style="background-color: #0e0e0e;">
+    <body style="background-color: #0e0e0e;">
       <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-          <a href="#" class="group">
+        <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"> <a
+            href="#" class="group fade-in">
             <div
               class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
               <img src="https://tr.rbxcdn.com/180DAY-c2fb21afcfe90140765dad41fbe09b12/512/512/Image/Webp/noFilter"
@@ -155,8 +190,7 @@ meticulous thought put into every detail. 🚀" property="og:description" />
             </div>
             <h3 class="mt-4 text-sm text-white">GUESTY</h3>
             <p class="mt-1 text-lg font-medium text-indigo-600">94.9M+ Visits</p>
-          </a>
-          <a href="#" class="group">
+          </a> <a href="#" class="group fade-in">
             <div
               class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
               <img src="https://tr.rbxcdn.com/180DAY-3a76cb525d0418d22f59dd2034c1a989/512/512/Image/Webp/noFilter"
@@ -164,8 +198,7 @@ meticulous thought put into every detail. 🚀" property="og:description" />
             </div>
             <h3 class="mt-4 text-sm text-white">Coal Miner Tycoon 2</h3>
             <p class="mt-1 text-lg font-medium text-indigo-600">25.5M+ Visits</p>
-          </a>
-          <a href="#" class="group">
+          </a> <a href="#" class="group fade-in">
             <div
               class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
               <img src="https://tr.rbxcdn.com/180DAY-de06f53745cb549cd98837439186e278/512/512/Image/Webp/noFilter"
@@ -173,8 +206,7 @@ meticulous thought put into every detail. 🚀" property="og:description" />
             </div>
             <h3 class="mt-4 text-sm text-white">Teapot Tycoon 🌱</h3>
             <p class="mt-1 text-lg font-medium text-indigo-600">252.5K+ Visits</p>
-          </a>
-          <a href="#" class="group">
+          </a> <a href="#" class="group fade-in">
             <div
               class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
               <img src="https://tr.rbxcdn.com/180DAY-49051e390e4eef7e09b8c91cae0c09e0/512/512/Image/Webp/noFilter"
@@ -182,61 +214,61 @@ meticulous thought put into every detail. 🚀" property="og:description" />
             </div>
             <h3 class="mt-4 text-sm text-white">🍬 Steal Candy from Noobs</h3>
             <p class="mt-1 text-lg font-medium text-indigo-600">4K+ Visits</p>
-          </a>
+          </a> </div>
+      </div>
+      <script> document.addEventListener("DOMContentLoaded", function () { const elements = document.querySelectorAll('.fade-in'); const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); } }); }); elements.forEach(element => { observer.observe(element); }); }); </script>
+
+      <div id="team-section">
+        <div class="py-24 sm:py-32">
+          <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
+            <div class="max-w-xl">
+              <h2 class="text-pretty text-3xl font-semibold tracking-tight text-white sm:text-4xl">Meet our team</h2>
+              <p class="mt-6 text-lg/8 text-white">We're a vibrant team of game developers and marketers, fueled by
+                passion
+                and committed to achieving exceptional results for our clients.</p>
+            </div>
+            <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+              <li>
+                <div class="flex items-center gap-x-6">
+                  <img class="h-16 w-16 rounded-full"
+                    src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-394CE131E15470388F13DE48A0CC990D-Png/150/150/AvatarHeadshot/Webp/noFilter"
+                    alt="">
+                  <div>
+                    <h3 class="text-base/7 font-semibold tracking-tight text-white">FordNGuns</h3>
+                    <p class="text-sm/6 font-semibold text-indigo-600">Founder / CEO</p>
+                    <p class="text-sm/6 font-semi text-gray-400">fordnguns@pivotsoftworks.com</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="flex items-center gap-x-6">
+                  <img class="h-16 w-16 rounded-full"
+                    src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-85B071FC4818465EC014FE5B294964F4-Png/150/150/AvatarHeadshot/Webp/noFilter"
+                    alt="">
+                  <div>
+                    <h3 class="text-base/7 font-semibold tracking-tight text-white">Kxde_Dev</h3>
+                    <p class="text-sm/6 font-semibold text-indigo-600">COO / Management</p>
+                    <p class="text-sm/6 font-semi text-gray-400">kxdedev@pivotsoftworks.com</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="flex items-center gap-x-6">
+                  <img class="h-16 w-16 rounded-full"
+                    src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-0D5599AA5FDAC0FB0E0C933BED8F7044-Png/150/150/AvatarHeadshot/Webp/noFilter"
+                    alt="">
+                  <div>
+                    <h3 class="text-base/7 font-semibold tracking-tight text-white">DecaBladeX</h3>
+                    <p class="text-sm/6 font-semibold text-indigo-600">COO / Investor</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="py-24 sm:py-32">
-      <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
-        <div class="max-w-xl">
-          <h2 class="text-pretty text-3xl font-semibold tracking-tight text-white sm:text-4xl">Meet our team</h2>
-          <p class="mt-6 text-lg/8 text-white">We're a vibrant team of game developers and marketers, fueled by passion
-            and committed to achieving exceptional results for our clients.</p>
-        </div>
-        <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-          <li>
-            <div class="flex items-center gap-x-6">
-              <img class="h-16 w-16 rounded-full"
-                src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-394CE131E15470388F13DE48A0CC990D-Png/150/150/AvatarHeadshot/Webp/noFilter"
-                alt="">
-              <div>
-                <h3 class="text-base/7 font-semibold tracking-tight text-white">FordNGuns</h3>
-                <p class="text-sm/6 font-semibold text-indigo-600">Founder / CEO</p>
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <div class="flex items-center gap-x-6">
-              <img class="h-16 w-16 rounded-full"
-                src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-0D5599AA5FDAC0FB0E0C933BED8F7044-Png/150/150/AvatarHeadshot/Webp/noFilter"
-                alt="">
-              <div>
-                <h3 class="text-base/7 font-semibold tracking-tight text-white">DecaBladeX</h3>
-                <p class="text-sm/6 font-semibold text-indigo-600">COO / Management</p>
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <div class="flex items-center gap-x-6">
-              <img class="h-16 w-16 rounded-full"
-                src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-85B071FC4818465EC014FE5B294964F4-Png/150/150/AvatarHeadshot/Webp/noFilter"
-                alt="">
-              <div>
-                <h3 class="text-base/7 font-semibold tracking-tight text-white">Kxde_Dev</h3>
-                <p class="text-sm/6 font-semibold text-indigo-600">COO / Management</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </body>
-
-  <footer>
-    ahehe
-  </footer>
+    </body>
 
 </html>
