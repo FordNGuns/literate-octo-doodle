@@ -1,9 +1,165 @@
-<!DOCTYPE html>
-<title>Pivot</title>
+<!doctype html>
 <html>
+  
+<title>Pivot</title>
+  
+<body style="background-color: #0e0e0e;">
+  <div
+    class="absolute inset-0 bg-[url('./grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]">
+  </div>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
   <body>
-  
-  <h1>Pivot</h1>
-  
+    <header class="bg-black">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Your Company</span>
+            <img class="h-8 w-auto" src="./logo.png" alt="">
+          </a>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+          <div class="relative">
+            <button type="button" class="flex items-center gap-x-1 text-sm/6 font-semibold text-white" aria-expanded="false">
+              Home
+            </button>
+          </div>
+    
+          <a href="#" class="text-sm/6 font-semibold text-white">Statistics</a>
+          <a href="#" class="text-sm/6 font-semibold text-white">Experiences</a>
+          <a href="#" class="text-sm/6 font-semibold text-white">Team</a>
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <a href="#" class="text-sm/6 font-semibold text-white">Contact us <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </nav>
+    </header>
+    
+
+    <div class="py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:text-center">
+          <h2 class="text-base/7 font-semibold text-indigo-600">Pivot to success</h2>
+          <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-balance">Pivot Softworks</p>
+          <p class="mt-6 text-lg/8 text-white">At Pivot, we craft super innovative and lightning-fast experiences, with meticulous thought put into every detail. 🚀</p>
+        </div>
+        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+          <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+            <div class="relative pl-16">
+              <dt class="text-base/7 font-semibold text-white">
+                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" />
+                  </svg>
+                </div>
+                Fast Updates
+              </dt>
+              <dd class="mt-2 text-base/7 text-white">All of our games are designed to be updated and maintained for years on end.</dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base/7 font-semibold text-white">
+                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                  </svg>
+                </div>
+                Trust
+              </dt>
+              <dd class="mt-2 text-base/7 text-white">All of our games are built on trust, maintaining that between our partners and users is of up-most importance.</dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base/7 font-semibold text-white">
+                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+                  </svg>
+                </div>
+                Replayability
+              </dt>
+              <dd class="mt-2 text-base/7 text-white">We design all of our games to be playable and fun for countless play-sessions!</dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base/7 font-semibold text-white">
+                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.464 7.464 0 0 1-1.15 3.993m1.989 3.559A11.209 11.209 0 0 0 8.25 10.5a3.75 3.75 0 1 1 7.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 0 1-3.6 9.75m6.633-4.596a18.666 18.666 0 0 1-2.485 5.33" />
+                  </svg>
+                </div>
+                Anti-Cheat
+              </dt>
+              <dd class="mt-2 text-base/7 text-white">We ensure that all of our games are using the most up to date methods, to keep our games protected and fun for all users.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>    
+
+    <div class="relative isolate overflow-hidden bg-indigo-600 py-8 sm:py-12 lg:py-16">
+      <div class="mx-auto max-w-7xl px-4 lg:px-6">
+        <dl class="grid grid-cols-1 gap-x-4 gap-y-8 text-center lg:grid-cols-3">
+            <div class="mx-auto flex max-w-xs flex-col gap-y-2">
+              <dt class="text-base text-white">Monthly Active Users</dt>
+              <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-4xl">11K+</dd>
+            </div>
+            <div class="mx-auto flex max-w-xs flex-col gap-y-2">
+              <dt class="text-base text-white">Peak Concurrent Users</dt>
+              <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-4xl">30K+</dd>
+            </div>
+            <div class="mx-auto flex max-w-xs flex-col gap-y-2">
+              <dt class="text-base text-white">Total Visits</dt>
+              <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-4xl">114M+</dd>
+            </div>
+        </dl>
+      </div>
+      <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+        <div class="aspect-[1155/678] w-[36.09375rem] bg-gradient-to-tr from-[#ffffff] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+      </div>
+    </div>
+
+    <div class="py-24 sm:py-32">
+      <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
+        <div class="max-w-xl">
+          <h2 class="text-pretty text-3xl font-semibold tracking-tight text-white sm:text-4xl">Meet our team</h2>
+          <p class="mt-6 text-lg/8 text-white">We're a vibrant team of game developers and marketers, fueled by passion and committed to achieving exceptional results for our clients.</p>
+        </div>
+        <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img class="h-16 w-16 rounded-full" src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-394CE131E15470388F13DE48A0CC990D-Png/150/150/AvatarHeadshot/Webp/noFilter" alt="">
+              <div>
+                <h3 class="text-base/7 font-semibold tracking-tight text-white">FordNGuns</h3>
+                <p class="text-sm/6 font-semibold text-indigo-600">Founder / CEO</p>
+              </div>
+            </div>
+          </li>
+    
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img class="h-16 w-16 rounded-full" src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-0D5599AA5FDAC0FB0E0C933BED8F7044-Png/150/150/AvatarHeadshot/Webp/noFilter" alt="">
+              <div>
+                <h3 class="text-base/7 font-semibold tracking-tight text-white">DecaBladeX</h3>
+                <p class="text-sm/6 font-semibold text-indigo-600">COO</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img class="h-16 w-16 rounded-full" src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-85B071FC4818465EC014FE5B294964F4-Png/150/150/AvatarHeadshot/Webp/noFilter" alt="">
+              <div>
+                <h3 class="text-base/7 font-semibold tracking-tight text-white">Kxde_Dev</h3>
+                <p class="text-sm/6 font-semibold text-indigo-600">Management</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
+
 </html>
