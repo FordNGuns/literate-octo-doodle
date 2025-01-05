@@ -1,0 +1,47 @@
+{
+    "33941325": {
+        "Name": "Elysion",
+        "Group": 33941325,
+        "Color": "Green",
+        "Tools": ["Spear"],
+        "Morph": {},
+        "Clothing": {},
+        "Rank": 1
+    },
+    "15898172": {
+        "Name": "New California Republic",
+        "Group": 15898172,
+        "Color": "White",
+        "Tools": ["Baton"],
+        "Morph": {},
+        "Clothing": {},
+        "Rank": 1
+    },
+    "13674867": {
+        "Name": "Brotherhood of Steel",
+        "Group": 13674867,
+        "Color": "Steel blue",
+        "Tools": ["Axe"],
+        "Morph": {},
+        "Clothing": {},
+        "Rank": 1
+    },
+    "5652851": {
+        "Name": "Crusaders of Steel",
+        "Group": 5652851,
+        "Color": "Dark red",
+        "Tools": ["Sword"],
+        "Morph": {},
+        "Clothing": {},
+        "Rank": 1
+    },
+    "11306609": {
+        "Name": "Richclave",
+        "Group": 11306609,
+        "Color": "Dark stone grey",
+        "Tools": ["VSMG"],
+        "Morph": {},
+        "Clothing": {},
+        "Rank": 1
+    }
+}
