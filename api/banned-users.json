@@ -71,7 +71,7 @@
     "banReason": "Pedophilia, Grooming / ERP involvement.",
     "banReasonLink": "https://docs.google.com/document/d/1011EYeAOUfPnM3Rnj938lnNGaIs3mCBfoKdRLCFNj94/edit?tab=t.0#heading=h.259cegbcvk3g",
     "bannedAt": "2025-01-08T17:23:00Z",
-    "isNSFW": false
+    "isNSFW": true
   },
   {
     "id": "8",
@@ -82,7 +82,7 @@
     "banReason": "Pedophilia, Grooming / ERP involvement.",
     "banReasonLink": "https://docs.google.com/document/d/1011EYeAOUfPnM3Rnj938lnNGaIs3mCBfoKdRLCFNj94/edit?tab=t.0#heading=h.259cegbcvk3g",
     "bannedAt": "2025-01-08T17:23:00Z",
-    "isNSFW": false
+    "isNSFW": true
   },
   {
     "id": "9",
@@ -90,9 +90,9 @@
     "discordId": "1273183978475487276",
     "displayName": "Lauren",
     "username": "LoreleiLaurie",
-    "banReason": "Pedophilia, Grooming / ERP involvement.",
+    "banReason": "Pedophilia, Grooming / ERP involvement, Leaking military docs.",
     "banReasonLink": "https://docs.google.com/document/d/1011EYeAOUfPnM3Rnj938lnNGaIs3mCBfoKdRLCFNj94/edit?tab=t.0#heading=h.259cegbcvk3g",
     "bannedAt": "2025-01-08T17:23:00Z",
-    "isNSFW": false
+    "isNSFW": true
   }
 ]
